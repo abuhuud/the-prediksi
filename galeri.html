@@ -10,13 +10,17 @@
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="./assets/css/bootstrap-reboot.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"
+    crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
   <div class="container-fluid">
-    <div class="row bg-danger">
+    <div class="row bg-dark">
       <div class="col-4"><img src="./assets/images/prediksilogo.jpg" width="100px" alt=""></div>
       <div class="col-8">
         <h1 class="mt-4 text-white">The Prediksi - Jaya Jaya Jaya !</h1>
@@ -24,7 +28,7 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark align-center sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary align-center sticky-top">
     <div class="container">
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav mx-auto">
@@ -33,7 +37,6 @@
           <a class="nav-link" href="visi-misi.html">Visi & Misi</a>
           <a class="nav-link" href="produk.html">Produk Kami</a>
           <a class="nav-link" href="kontak.html">Kontak Kami</a>
-          <a class="nav-link" href="tentang.html">Tentang Kami</a>
         </div>
       </div>
     </div>
@@ -42,50 +45,52 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2 bg-danger p-3 vh-100 shadow fixed-top">
+      <div class="col-md-2 bg-dark p-3 vh-100 shadow fixed-top">
         <nav class="navbar-nav bg-gradient-danger sidebar sidebar-dark accordion" id="accordionSidebar">
-          <!-- Divider -->
-          <hr class="sidebar-divider my-0">
+          <ul class="navbar-nav sidebar">
+            <!-- Divider -->
+            <hr class=" sidebar-divider my-0">
 
-          <!-- Nav Item - Dashboard -->
-          <li class="nav-item">
-            <a class="nav-link" href="artikel.html">
-              <span class="text-white">Artikel</span></a>
-          </li>
+            <!-- Nav Item -->
+            <li class="nav-item">
+              <a class="nav-link" href="artikel.html">
+                <span class="text-white">Artikel</span></a>
+            </li>
 
-          <!-- Nav Item - Tables -->
-          <li class="nav-item">
-            <a class="nav-link" href="event.html">
-              <span class="text-white">Event</span></a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="event.html">
+                <span class="text-white">Event</span></a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link active" href="galeri.html">
-              <span>Galeri Foto</span></a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="galeri.html">
+                <span>Galeri Foto</span></a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="klien.html">
-              <span class="text-white">Klien Kami</span></a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="klien.html">
+                <span class="text-white">Klien Kami</span></a>
+            </li>
 
-          <li class="nav-bar">
-            <a class="nav-link" href="login.html">
-              <span class="text-white">Login</span>
-            </a>
-            <ul style="list-style: none;">
-              <li class="nav-item">
-                <a class="nav-link" href="sign-in.html">
-                  <span class="text-white">Sign in</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sign-up.html">
-                  <span class="text-white">Sign up</span>
-                </a>
-              </li>
-            </ul>
-          </li>
+            <li class="nav-bar">
+              <a class="nav-link" href="login.html">
+                <span class="text-white">Login</span>
+              </a>
+              <ul style="list-style: none;">
+                <li class="nav-item">
+                  <a class="nav-link" href="sign-in.html">
+                    <span class="text-white">Sign in</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sign-up.html">
+                    <span class="text-white">Sign up</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- End Of Nav Item -->
         </nav>
       </div>
       <div class="col-md-10 p-auto">
@@ -93,31 +98,87 @@
         <div class="container mt-3">
           <div class="row">
             <div class="col-md-4">
-              <img src="./assets/images/slide1.jpg" alt="Gambar 1" class="img-fluid">
+              <div class="card-group">
+                <div class="card shadow p-2 mb-2">
+                  <a href="./assets/images/slide1.jpg" data-toggle="lightbox" data-title="Judul Gambar 1"
+                    data-lightbox="galeri" data-footer="Deskripsi Gambar 1" data-target="#lightboxModal">
+                    <img src="./assets/images/slide1.jpg" alt="Gambar 1" class="img-fluid">
+                  </a>
+                </div>
+              </div>
             </div>
+
             <div class="col-md-4">
-              <img src="./assets/images/slide2.jpg" alt="Gambar 2" class="img-fluid">
+              <div class="card-group">
+                <div class="card shadow p-2 mb-2">
+                  <a href="./assets/images/slide3.jpg" data-toggle="lightbox" data-title="Judul Gambar 1"
+                    data-lightbox="galeri" data-footer="Deskripsi Gambar 1" data-target="#lightboxModal">
+                    <img src="./assets/images/slide3.jpg" alt="Gambar 1" class="img-fluid">
+                  </a>
+                </div>
+              </div>
             </div>
+
             <div class="col-md-4">
-              <img src="./assets/images/slide3.jpg" alt="Gambar 3" class="img-fluid">
+              <div class="card-group">
+                <div class="card shadow p-2 mb-2">
+                  <a href="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/08/30/512154109.jpg"
+                    data-toggle="lightbox" data-title="Judul Gambar 1" data-lightbox="galeri"
+                    data-footer="Deskripsi Gambar 1" data-target="#lightboxModal">
+                    <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/08/30/512154109.jpg"
+                      alt="Gambar 1" class="img-fluid">
+                  </a>
+                </div>
+              </div>
             </div>
-            <!-- Tambahkan kolom untuk gambar lainnya di sini jika diperlukan -->
+
+            <div class="col-md-4">
+              <div class="card-group">
+                <div class="card shadow p-2 mb-2">
+                  <a href="https://cdn.popmama.com/content-images/post/20220209/the-prediksii-8-59f9e1e5336c19e02544279abc1eb5a8_800x420.jpg"
+                    data-toggle="lightbox" data-title="Judul Gambar 1" data-lightbox="galeri"
+                    data-footer="Deskripsi Gambar 1" data-target="#lightboxModal">
+                    <img
+                      src="https://cdn.popmama.com/content-images/post/20220209/the-prediksii-8-59f9e1e5336c19e02544279abc1eb5a8_800x420.jpg"
+                      alt="Gambar 1" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card-group">
+                <div class="card shadow p-2 mb-2">
+                  <a href="https://radarsemarang.jawapos.com/wp-content/uploads/2022/11/8_the-prediksi_rsz.jpg"
+                    data-toggle="lightbox" data-title="Judul Gambar 1" data-lightbox="galeri"
+                    data-footer="Deskripsi Gambar 1" data-target="#lightboxModal">
+                    <img src="https://radarsemarang.jawapos.com/wp-content/uploads/2022/11/8_the-prediksi_rsz.jpg"
+                      alt="Gambar 1" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card-group">
+                <div class="card shadow p-2 mb-2">
+                  <a href="https://media.suara.com/pictures/653x366/2022/09/21/85897-potret-geng-prediksi-motoran-di-amerika-instagramtheprediksi.jpg"
+                    data-toggle="lightbox" data-title="Judul Gambar 1" data-lightbox="galeri"
+                    data-footer="Deskripsi Gambar 1" data-target="#lightboxModal">
+                    <img
+                      src="https://media.suara.com/pictures/653x366/2022/09/21/85897-potret-geng-prediksi-motoran-di-amerika-instagramtheprediksi.jpg"
+                      alt="Gambar 1" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
+  <script src="./assets/js/lightbox.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
